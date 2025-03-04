@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 
 const NavBar = () => {
   return (
@@ -9,6 +10,7 @@ const NavBar = () => {
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
+      <Button />
     </div>
   );
 };
