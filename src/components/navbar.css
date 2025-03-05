@@ -5,3 +5,10 @@
   border: 1px solid;
   padding: 2px 4px;
 }
+
+.card {
+  border: 0.09rem solid;
+  width: 20%;
+  color: white;
+  background-color: grey;
+}
