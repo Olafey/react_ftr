@@ -1,16 +1,19 @@
 import React from "react";
-import Button from "../Button";
+import Button from "./Button";
+import Hero from "./Hero";
+import "./navbar.css";
 
 const NavBar = () => {
+  const signUp = () => {
+    alert("Signing Up.....");
+  };
   return (
-    <div>
+    <div className="navbar">
       <h1>Logo</h1>
-      <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-      <Button />
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <Button go="Get Started Now" submit={signUp} />
     </div>
   );
 };
