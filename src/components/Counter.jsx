@@ -19,6 +19,12 @@ const Counter = () => {
     setIsLoggedIn(true);
   };
 
+  const [adder, setAdder] = useState(10);
+
+  const Adder = () => {
+    setCount((prev) => prev * 3);
+  };
+
   return (
     <div>
       <button onClick={change}>{count}</button>
@@ -33,6 +39,11 @@ const Counter = () => {
       ) : (
         <button onClick={login}>Log In</button>
       )}
+      <br />
+      <br />
+      <div>
+        <button onClick={Adder}>Adder {adder}</button>
+      </div>
     </div>
   );
 };
