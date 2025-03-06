@@ -7,6 +7,7 @@ const Products = () => {
   const baseUrl = "https://fakestoreapi.com";
 
   //useEffect
+
   return (
     <div>
       {isLoading ? (
