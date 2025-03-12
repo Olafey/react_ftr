@@ -49,6 +49,8 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/profilecards" element={<ProfileCard />} />
           <Route path="/counter/show" element={<Counter />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
