@@ -5,6 +5,8 @@ import Button from "./components/Button";
 import ProfileCard from "./components/profileCard";
 import Products from "./components/products";
 
+import SingleProduct from "./pages/SingleProduct";
+
 import NotFound from "./pages/NotFound";
 
 import Counter from "./components/Counter";
@@ -47,6 +49,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/products" element={<Products />} />
+
+          <Route path="/products/:id" element={<SingleProduct />} />
+
           <Route path="/profilecards" element={<ProfileCard />} />
           <Route path="/counter/show" element={<Counter />} />
 
