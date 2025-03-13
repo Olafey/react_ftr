@@ -12,3 +12,11 @@
   color: white;
   background-color: grey;
 }
+
+.footer_cont {
+  background-color: blueviolet;
+  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

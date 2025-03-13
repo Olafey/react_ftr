@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Button from "./components/Button";
 import ProfileCard from "./components/profileCard";
 import Products from "./components/products";
+import Footer from "./components/Footer";
 
 import SingleProduct from "./pages/SingleProduct";
 
@@ -46,6 +47,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/products" element={<Products />} />
@@ -54,9 +56,11 @@ const App = () => {
 
           <Route path="/profilecards" element={<ProfileCard />} />
           <Route path="/counter/show" element={<Counter />} />
+          <Route path="/about" element={<Footer />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
