@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import ProfileCard from "./components/profileCard";
 import Products from "./components/products";
 import Footer from "./components/Footer";
+import Signup from "./pages/Signup";
 
 import SingleProduct from "./pages/SingleProduct";
 
@@ -42,7 +43,7 @@ import Counter from "./components/Counter";
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signup from "./pages/Signup";
+// import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 
 const App = () => {

@@ -12,7 +12,7 @@ const Signup = () => {
   const handleInput = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // console.log(formData);
+    console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -61,7 +61,7 @@ const Signup = () => {
           </div>
 
           <div>
-            <label htmlFor="password">Passord</label>
+            <label htmlFor="password">Password</label>
             <input
               onChange={handleInput}
               type="email"
@@ -71,6 +71,8 @@ const Signup = () => {
               required
             />
           </div>
+
+          <button>SignUp</button>
         </form>
       </div>
     </div>
