@@ -43,6 +43,7 @@ import Counter from "./components/Counter";
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AuthProvider from "./contexts/AuthContext";
 // import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 
@@ -50,22 +51,24 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/products" element={<Products />} />
+        <AuthProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/products" element={<Products />} />
 
-          <Route path="/products/:id" element={<SingleProduct />} />
+            <Route path="/products/:id" element={<SingleProduct />} />
 
-          <Route path="/profilecards" element={<ProfileCard />} />
-          <Route path="/counter/show" element={<Counter />} />
-          <Route path="/sign-up" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/about" element={<Footer />} />
+            <Route path="/profilecards" element={<ProfileCard />} />
+            <Route path="/counter/show" element={<Counter />} />
+            <Route path="/sign-up" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<Footer />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </AuthProvider>
       </BrowserRouter>
     </>
   );
