@@ -46,6 +46,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthProvider from "./contexts/AuthContext";
 // import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
   return (
